@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Eon - Your source for literary, opinion, news, and political articles.">
+  <title>Eon - Blog</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo h1 {
+      font-size: 36px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: #0077cc;
+      color: white;
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+    }
+
+    .featured {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .featured h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    .article-preview {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .article-preview article {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+
+    .article-preview article h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .article-preview article p {
+      color: #555;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+
+    footer p {
+      font-size: 14px;
+    }
+
+    .contact form {
+      display: grid;
+      gap: 20px;
+    }
+
+    .contact input,
+    .contact textarea {
+      padding: 10px;
+      font-size: 16px;
+      width: 100%;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+    }
+
+    .contact button {
+      padding: 10px 20px;
+      background-color: #0077cc;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .contact button:hover {
+      background-color: #005fa3;
+    }
+
+    .literary, .opinion, .news, .politics {
+      padding: 40px 20px;
+    }
+
+    .literary article, .opinion article, .news article, .politics article {
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .literary h2, .opinion h2, .news h2, .politics h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Home Page (index.html) -->
+<header>
+  <div class="logo">
+    <h1>Eon</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#literary">Literary</a></li>
+      <li><a href="#opinion">Opinion</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#politics">Politics</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <h2>Welcome to Eon</h2>
+  <p>Your source for insightful articles on literary, opinion, news, and politics.</p>
+</section>
+
+<section class="featured">
+  <h2>Featured Articles</h2>
+  <div class="article-preview">
+    <article>
+      <h3><a href="#">The Future of Literature in the Digital Age</a></h3>
+      <p>Exploring how technology is shaping the world of literature...</p>
+    </article>
+    <article>
+      <h3><a href="#">Political Unrest: What Does the Future Hold?</a></h3>
+      <p>A deep dive into the rising political movements around the world...</p>
+    </article>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Eon Blog. All rights reserved.</p>
+</footer>
+
+<!-- About Section -->
+<section id="about">
+  <h2>About Eon</h2>
+  <p>At Eon, we believe in the power of thoughtful analysis and informed commentary. Our goal is to bring together diverse perspectives on literature, politics, and current affairs. Whether you're looking for deep literary insights or engaging political debates, Eon is here to keep you informed and inspired.</p>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form action="#">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<!-- Literary Articles Section -->
+<section id="literary" class="literary">
+  <h2>Literary Articles</h2>
+  <article>
+    <h3><a href="#">The Evolution of Modern Fiction</a></h3>
+    <p>A discussion on how modern fiction has evolved...</p>
+  </article>
+  <article>
+    <h3><a href="#">The Impact of Digital Media on Reading Habits</a></h3>
+    <p>How digital media is influencing the way we read...</p>
+  </article>
+</section>
+
+<!-- Opinion Section -->
+<section id="opinion" class="opinion">
+  <h2>Opinion Articles</h2>
+  <article>
+    <h3><a href="#">The Importance of Free Speech in Modern Society</a></h3>
+    <p>A look at the role of free speech in today's world...</p>
+  </article>
+  <article>
+    <h3><a href="#">The Role of Media in Shaping Public Opinion</a></h3>
+    <p>How the media plays a crucial part in shaping societal views...</p>
+  </article>
+</section>
+
+<!-- News Section -->
+<section id="news" class="news">
+  <h2>News Articles</h2>
+  <article>
+    <h3><a href="#">Global Economic Outlook in 2025</a></h3>
+    <p>Insights into the global economy and what to expect in the near future...</p>
+  </article>
+  <article>
+    <h3><a href="#">Climate Change and Its Impact on Our Planet</a></h3>
+    <p>How climate change is affecting every aspect of our lives...</p>
+  </article>
+</section>
+
+<!-- Politics Section -->
+<section id="politics" class="politics">
+  <h2>Politics Articles</h2>
+  <article>
+    <h3><a href="#">The Changing Landscape of Global Politics</a></h3>
+    <p>How international relations are shifting in today's political climate...</p>
+  </article>
+  <article>
+    <h3><a href="#">The Future of Democracy in the 21st Century</a></h3>
+    <p>Exploring the challenges and opportunities for democracies today...</p>
+  </article>
+</section>
+
+</body>
+</html>
